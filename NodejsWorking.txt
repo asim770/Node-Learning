@@ -1,0 +1,16 @@
+Architecture of Node js
+// 1. User request to the Server.
+// 2. That request is sent to event queue.
+// 3. Then there is event loop who watch over the event queue and take request from event queue (with fifo principal)
+// 4. Then event loop check that this request is blocking (sync) or non-blocking (async).
+// 5. If the request is async then it process the request and response to the user.
+// 6. If the request is sync then this request is sent to thread pool (in thread pool there were threads who process the request).
+// 7. If there was any free thread in thread pool it process the request then send to event loop then user get response.  
+// 8. If no threads availabe then user need to wait. 
+
+// Note:
+// 1. That's why we  always need to code in async 
+// 2. min. thread available is 4 maxHeaderSize. belong to the cpu. below code give the no. of thread acc. to my cpus which is 8
+
+// console.log(os.cpus().length) // o/p 8
+
