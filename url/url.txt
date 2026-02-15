@@ -1,0 +1,30 @@
+//Reading Information
+
+// https://www.google.com/  ----------->This is the URL now break it down
+
+1.Firts is:- https
+It is known for protocols means how sever and user interact with each other.
+Like take example of https. 
+It is stand for hyper text transfer protocol secure
+means user and sever interact with each other by encrypted mode(means communication in encryption for security reason).
+
+There is wbs which is for web sockets used for real time communication
+
+2. Second is:- www.google.com
+It is domain means a user friendly ip address for myServer
+
+3. This is path:- /,/about,etc.
+
+4. Fourth is Query Parameters:- https://www.pyushgerg.dev/about?userId=1&2
+?userId=1&a=2  ---------->this is known as query Parameters
+means id is 1 and a=2
+
+Let's take an realLife examples
+https://www.youtube.com/results?search_query=javacript+http+server
+
+search_query=javacript+http+server. ---------> It is the query let's break it down
+here is search_query Parameters whose value is javacript+http+server youtube took this value and search acc. to this Parameters
+then give the results and render it
+
+Note:- 
+Our node can not parse query parameter so we use a package called url with command----> npm i url;
