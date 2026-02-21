@@ -1,0 +1,8 @@
+//GET Request
+When user wants something(read data from server) from server it ask for get Request.
+e.g when user refresh page, getting infromation from user.
+
+//POST Request
+When user wants to send data to the server it do post request.
+e.g user login, etc.
+
